@@ -204,7 +204,7 @@ class game_view:
 
     #renders piece to the board
     def draw_piece(self, display, piece, board_pos, alpha=255):
-        center = self._piece_cener(board_pos)
+        center = self.piece_center(board_pos)
         radius = settings.TILE_SIZE // 2 - 8
         fill = settings.WHITE_PIECE if piece.get_player() == CheckersGame.HUMAN_PLAYER else settings.BLACK_PIECE
 
